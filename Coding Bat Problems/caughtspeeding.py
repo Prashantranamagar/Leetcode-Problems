@@ -3,7 +3,7 @@ Caught Speeding
 Source: https://codingbat.com/prob/p137202
 
 Goal:
-Return 0 is speed is <= 60,
+Return 0 if speed is <= 60,
         1 if speed is 61 <= speed <= 80, 
         and 2 if speed >= 81.
         If it's birthday, it should be substract by 5.
