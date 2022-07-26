@@ -1,22 +1,28 @@
-// Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+/*
 
-// An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
-// typically using all the original letters exactly once.
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 
-//Example:
-// Input: s = "anagram", t = "nagaram"    Output: true
-// Input: s = "rat", t = "car"     Output: false
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
+typically using all the original letters exactly once.
 
+Example:
+Input: s = "anagram", t = "nagaram"    Output: true
+Input: s = "rat", t = "car"     Output: false
+
+*/
 
 var buildCharMap = function(string){
     charMap = {}
     for (let char in string){
-        // if(charMap[char]){
-        //     charMap[char] ++
-        // }else{
-        //     charMap[char] = 1
-        // }
+        /*
         
+        if(charMap[char]){
+            charMap[char] ++
+        }else{
+            charMap[char] = 1
+        }
+
+        */
         charMap[char] = charMap[char] + 1 || 1
     }
     return charMap

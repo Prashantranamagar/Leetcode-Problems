@@ -1,10 +1,15 @@
-// Linked List
-//collection of node each node contain some data and refrence to next node.
-// two special node head node and tail node.
+/*
 
-// Linked List implementation
+Linked List
+collection of node each node contain some data and refrence to next node.
+two special node head node and tail node.
 
-//Creating a node
+Linked List implementation
+
+Creating a node 
+
+*/
+
 class Node{
     constructor (data, next=null){
         this.data = data
@@ -18,13 +23,17 @@ class LinkedList{
         this.head=null;
     }
 
-    //Inserting node first inserting at the beginning of the linked list.
-    //Eg
-    // head => [data1, next=null]
-    //inserting new data
-    //[data2, next=head]
-    //[data2, next => [data1, next=null]]
-    //head => [data2, next => [data1, next=null]]
+    /* 
+    
+    Inserting node first inserting at the beginning of the linked list.
+    Eg
+    head => [data1, next=null]
+    inserting new data
+    [data2, next=head]
+    [data2, next => [data1, next=null]]
+    head => [data2, next => [data1, next=null]]
+    
+     */
     insertFirst(data){
         const node = newNode(data, this.head)
         this.head = node
