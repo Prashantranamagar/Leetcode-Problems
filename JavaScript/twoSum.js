@@ -27,7 +27,7 @@ var pivotIndex = function(nums) {
     for( let i=0; i < nums.length; i++ ){
       total += nums[i];
     }
-   for (let i=0; i < nums.length; i++){
+    for (let i=0; i < nums.length; i++){
      
      rightSum = total -leftSum - nums[i];
      if (leftSum == rightSum){
