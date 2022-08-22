@@ -15,8 +15,14 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 Input: prices = [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transactions are done and the max profit = 0.
-*/
 
+Solution:
+Initilize maxprofit and minimum price so far.Loop through the array 
+calculate mimimum so far bu comparing the current element and minimum so far
+calculate currentprofit as minimum so far - currentelement
+calculate maxprofit comparint currentprofint and max profit
+return maxprofit
+*/
 
 var maxProfit = function(prices) {
     let maxprofit = 0
@@ -28,26 +34,4 @@ var maxProfit = function(prices) {
         maxprofit = Math.max(maxprofit, currentprofit)
     }
     return maxprofit
-};
-
-
-//or
-
-var maxProfit = function(prices) {
-    let left = 0
-    let right = 1
-    let maxprofit = 0
-    while (right<prices.length){
-        let currentprofit =  prices[right]-prices[left]
-        if (prices[left]<prices[right])
-        {
-            maxprofit = Math.max(currentprofit, maxprofit)
-            
-        }
-        else{
-            left=right
-        }
-        right += 1
-    }
-  return maxprofit 
 };

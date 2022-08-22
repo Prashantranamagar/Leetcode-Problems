@@ -13,6 +13,8 @@ Input: nums = [1], target = 0
 Output: -1
 
 Solution:
+1. Brute Force
+2.Binary Search
 as it is a rotated sorted array, there is a pivot. we don't know where the pivot is. when we pick the middle, either it's
 left side will be sorted or right side will be sorted. first, let's check - if left side is sorted or not. When will be 
 the left side sorted? when low<=mid; if it's sorted, we can apply binary search in it.  But, if left side of the middle 
