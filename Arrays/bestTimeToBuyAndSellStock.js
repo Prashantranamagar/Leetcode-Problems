@@ -19,7 +19,7 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 Solution:
 Initilize maxprofit and minimum price so far.Loop through the array 
 calculate mimimum so far bu comparing the current element and minimum so far
-calculate currentprofit as minimum so far - currentelement
+calculate currentprofit as currentelement - minimum so far
 calculate maxprofit comparint currentprofint and max profit
 return maxprofit
 */
