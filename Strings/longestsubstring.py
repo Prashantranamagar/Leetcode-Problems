@@ -23,9 +23,9 @@ a b c a b c b b
   i j
 """
 
-s = "abcabcbb"
+# s = "abcabcbb"
 
-
+#Brute Force
 # def lengthOfLongestSubstring(s):
 #     maxcount = 0
 #     if len(s) == 1:
@@ -44,20 +44,21 @@ s = "abcabcbb"
 
 
 
-
+#Optimal
+s = "abcabcbb"
 def lengthOfLongestSubstring(s):
-    start = maxLength = 0
-    usedChar = {}
-    
-    for i in range(len(s)):
-        if s[i] in usedChar and start <= usedChar[s[i]]:
-            start = usedChar[s[i]] + 1
-        else:
-            maxLength = max(maxLength, i - start + 1)
+    se = set()
+    left = 0
+    count =0
+    for right in range(len(s)):
+        if s[right] in se:
+            se.remove(s[left])
+            left+=1
+        se.add(s[right])
+        count = max(count, right-left+1)
+    return count
 
-        usedChar[s[i]] = i
 
-    return maxLength
 
 
 print(lengthOfLongestSubstring(s))
