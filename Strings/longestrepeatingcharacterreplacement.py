@@ -19,24 +19,26 @@ The substring "BBBB" has the longest repeating letters, which is 4.
 """
 
 
-s = "AABABBA"
+s = "ABAB"
 k = 1
 
+
+# Incorrect
 def characterReplacement(s, k):
-  l = 0
-  result = 0
-  a = {}
-  for r in range(len(s)):
-    if s[r] in  a:
-        a[s[r]] += 1
-    else:
-      a[s[r]] = 1
-    while (r-l+1) - max(a.values()) > k:
-      a[s[l]] -= 1
-      l+=1
+#   l = 0
+#   result = 0
+#   a = {}
+#   for r in range(len(s)):
+#     if s[r] in  a:
+#         a[s[r]] += 1
+#     else:
+#       a[s[r]] = 1
+#     while (r-l+1) - max(a.values()) > k:
+#       a[s[l]] -= 1
+#       l+=1
 
-    result = max(result, r-l+1)
+#     result = max(result, r-l+1)
 
-  return result
+#   return result
 
-print(characterReplacement(s,k))
+# print(characterReplacement(s,k))
