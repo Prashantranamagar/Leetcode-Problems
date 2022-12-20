@@ -13,6 +13,13 @@ Output: true
 Input: s = "rat", t = "car"
 Output: false
 
+Approaches:
+1.Mapping
+--> Make charmap for both inputs and check the if the char count in charmap are equal
+2.Sorting 
+-->Sort the given string and check if they are equal
+
+
 """
 
 
