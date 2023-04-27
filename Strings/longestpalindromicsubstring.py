@@ -13,10 +13,11 @@ Input: s = "cbbd"
 Output: "bb"
 
 Approach:
-1.BruteForce
-1.Expand from the center
+1.BruteForce.
+1.Expand from the center to check palindromic substring.
 """
 
+# 1.Expand from the center to check palindromic substring.
 
 def longestPalindrome(self, s):
     #Approach:Expand from the center.
