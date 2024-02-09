@@ -31,10 +31,13 @@ Output:
 
 ### Solution 
 
-```SELECT p.firstName, p.lastName, a.city, a.state FROM 
-Person p LEFT JOIN Address a ON p.personId = a.personId;```
+```sql
+SELECT p.firstName, p.lastName, a.city, a.state FROM 
+Person p LEFT JOIN Address a ON p.personId = a.personId;
+```
+- alternatively
 
-- Alternatively
-
-```SELECT p.firstName, p.lastName, a.city, a.state FROM 
-Person p LEFT JOIN Address a USING (personId);```
+```sql
+SELECT p.firstName, p.lastName, a.city, a.state FROM 
+Person p LEFT JOIN Address a USING (personId);
+```
