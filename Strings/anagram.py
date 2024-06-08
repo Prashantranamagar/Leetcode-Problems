@@ -22,23 +22,48 @@ Approaches:
 
 """
 
+# Solution 1  Time complexity : O(n)
+
+def counter_map(string):
+    char_map = {}
+    for char in string:
+        if char in char_map:
+            char_map[char] += 1
+        else:
+            char_map[char] = 0
+    return char_map
+
 
 def isAnagram(s, t):
-    charmap = {}
-    for char in s:
-        if char in charmap:
-            charmap[char] += 1
-        else:
-            charmap[char] = 0
+    charmap = counter_map(s)
+    charmap1 = counter_map(t)
+    print (charmap, charmap1)
+    # for char in charmap:
+    if charmap == charmap1:
+        print('True') 
+        return True
 
-    charmap1 = {}
-    for char in t:
-        if char in charmap1:
-            charmap1[char] += 1
-        else:
-            charmap1[char] = 0
+    print('false')
+    return False
 
-    for char in charmap:
-        if charmap == charmap1:
-            return True
-        return False
+s = "anagram"
+t = "nagaram"
+
+isAnagram(s,t)
+
+
+# Solution 2 using Counter from collections. it is just like the counter_map function we make in sol 1. Time complexity: O(n)
+
+from collections import Counter
+def isAnagram(s, t):
+    charmap = Counter(s)
+    charmap1 = Counter(t)
+    print (charmap, charmap1)
+    # for char in charmap:
+    if charmap == charmap1:
+        print('True') 
+        return True
+
+    print('false')
+    return False
+
