@@ -39,7 +39,7 @@ class Solution(object):
         """
         list_length = len(digits)
         string = ''
-        for i in range (list_length):
+        for i in range(list_length):
             j = str(digits[i])
             string = string + j
         print(string)
@@ -47,7 +47,7 @@ class Solution(object):
         print(string_to_int)
         int_to_string = str(string_to_int)
         result = []
-        for i in range (len(int_to_string)):
+        for i in range(len(int_to_string)):
             j = int(int_to_string[i])
             result.append(j)
        
