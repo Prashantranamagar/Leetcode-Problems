@@ -68,3 +68,50 @@ print(my_list_2)
 
 
 
+"""
+    Question no 3
+    You are given a list with random intege number you need sort them with first odd number and even number after that in the same list. 
+
+    eg: my_list = [1, 2, 4, 5, 6, 7, 8]
+    output = [1,5,7,2,4,6,8]
+
+"""
+
+# Using extra space
+# my_list = [1, 10, 2, 9, 4, 5, 6, 7, 8]
+# odd_list = [x for x in my_list if x % 2 != 0]
+# even_list = [x for x in my_list if x % 2 == 0]
+# odd_list.sort()
+# even_list.sort()
+# result_list = odd_list + even_list
+# print(result_list)
+
+
+# Without using extra space
+my_list = [1, 2, 4, 5, 6, 7, 8]
+
+i = 0
+j = len(my_list)-1
+
+while i < j:
+    if my_list[i] % 2 != 0:
+        i += 1
+    elif my_list[j] % 2 == 0:
+        j -= 1
+    # If the number at the i-th index is even and the number at the j-th index is odd, swap them
+    else:
+        my_list[i], my_list[j] = my_list[j], my_list[i]
+        i += 1
+        j -= 1
+
+print(my_list)
+item_index = None
+for index, item in enumerate(my_list):
+    if item % 2 == 0:
+        item_index = index
+        break
+print(item_index)
+
+my_list[:item_index].sort()
+my_list[item_index:].sort()
+print(my_list)
