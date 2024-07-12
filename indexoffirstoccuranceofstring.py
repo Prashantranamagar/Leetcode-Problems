@@ -17,30 +17,29 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 """
 
 
-# Solution: 1 
-
-class Solution(object):
-    def strStr(self, haystack, needle):
-        """
-        :type haystack: str
-        :type needle: str
-        :rtype: int
-        """
-        needle_length = len(needle)
-        haystack_length = len (haystack)
-
-        for i in range(haystack_length):
-            if haystack[i:i+needle_length] == needle:
-                return i
-        return -1 
-    
-
-# Solution 2 
+# Solution 1
 
 class Solution:
     def strStr(self, haystack, needle):
+        length_haystack = len(haystack)
+        length_needle = len(needle)
+        # Edge Cases if neddle is longer than haystack
+        if length_needle > length_haystack:
+            return -1
+
+        if length_needle == 0:
+            return 0
+
         for i in range(len(haystack) - len(needle) + 1):
             if haystack[i:i+len(needle)] == needle:
                 return i
         return -1
 
+
+# Solution 2 just to use the buildin string find method
+
+haystack, needle = "butsadbutsad", "sad"
+print(haystack.find(needle))  # find the first occurance of needle in haystack
+# Output: 3
+print(haystack.count(needle))  # find how may times the neddle is present in haystack
+# Output: 2
