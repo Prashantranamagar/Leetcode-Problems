@@ -37,25 +37,17 @@ class Solution(object):
         :type digits: List[int]
         :rtype: List[int]
         """
-        list_length = len(digits)
         string = ''
-        for i in range(list_length):
-            j = str(digits[i])
-            string = string + j
-        print(string)
-        string_to_int = int(string) + 1 
-        print(string_to_int)
+        for item in digits:
+            to_string = str(item)
+            string += to_string
+        string_to_int = int(string) + 1
         int_to_string = str(string_to_int)
-        result = []
-        for i in range(len(int_to_string)):
-            j = int(int_to_string[i])
-            result.append(j)
-       
+        result = list(int_to_string)
         return result
-    
 
 
-# Solution 2 
+# Solution 2
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         for i in reversed(range(len(digits))):
