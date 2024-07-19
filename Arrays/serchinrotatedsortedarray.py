@@ -18,30 +18,31 @@ Output: -1
 Approach 1 (Normal Approach): Brute force using loop if item = target return the index. Time Complexity: O(n)
 
 Approach 2 (Optimized Approach): Using Binary Serach
-            1. initialize lefit and right pointer at first and last half.
+            1. initialize left and right pointer at first and last index.
             2. while left <= right:
-            3. fing mid = left + right // 2
-            2. find the sorted half is it it the left half or right half.
-
-                3. if left is sorted then
-                4. check if the target is in the sorted half or not 
-                5. if  yes my_list[low] =< target and target =< mylist[high]: then 
-                    eliminate the right half right = mid-1
-                else:
-                    eliminate the left half ie. target is in right half  left = mid + 1
-            
-            6. else: right half is sorted.
+            3.  find mid = left + right // 2
+                 if my_list(mid) == target return mid
+            4.  find the sorted half is it it the left half or right half.
+                if sorted half is in left i.e my_list[left] <= my_list[mid]
+                    find if the target is in the sorted half i.e
+                    if my_list[low] =< target and target =< mylist[high]: 
+                        eliminate the right half right = mid-1
+                    if not
+                    else:
+                        eliminate the left half ie. target is in right half  left = mid + 1
+                if not
+                else: right half is sorted.
+                    if target is in  sorted half ie. right half
                     if my_list[high] >= target and target >= my_list[mid]:
                         eliminate left half left = mid + 1
-                    else 
-                        eliminate right half right  = mid - 1 
-                        
-                        
+                    if not
+                    else:
+                        eliminate right half right  = mid - 1                      
 """
 
 
 my_list = [4,5,6,7,0,1,2]
-target = 9
+target = 5
 
 ################################################################
 # TIPS USE BINARY SEARCH FIND SORTED HALF LEFT OR RIGHT
@@ -79,6 +80,7 @@ def search_in_rotated_sorted_array(my_list):
             else:  # target is in left unsorted half
                 right = mid - 1
     return -1
+
 
 
 print(search_in_rotated_sorted_array(my_list))
