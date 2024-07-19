@@ -43,6 +43,11 @@ Approach 2 (Optimized Approach): Using Binary Serach
 my_list = [4,5,6,7,0,1,2]
 target = 9
 
+################################################################
+# TIPS USE BINARY SEARCH FIND SORTED HALF LEFT OR RIGHT
+# CHECK IF THE TARGET IS IS IN SORTED HALF OR UNSORTED HALF FOR BOTH CONDITION
+# i.e when left half sorted or when right half is sorted
+###############################################################
 
 # Tips find whether the sorted half is left or right  
     #if left find where the target is if it is in left sorted half
