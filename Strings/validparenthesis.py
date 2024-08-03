@@ -23,7 +23,7 @@ Output: true
 """
 
 
-def isValid(self, s):
+def isValid(s):
     stack = []
     i = 0
     while i < len(s):
@@ -42,3 +42,26 @@ def isValid(self, s):
 
     if len(stack) == 0:
         return True
+
+
+# print(isValid(s="[()[{()}]]"))
+
+
+def validpar(input):
+    # length = len(input)
+    stack = []
+    for item in input:
+        if item == '(' or item == '{' or item == "[":
+            stack.append(item)
+        elif stack[-1] == '(' and item == ')' or stack[-1] == '[' and item == ']' or stack[-1] == '{' and item =='}':
+            stack.pop()
+        else:
+            return False
+    if len(stack) == 0:
+        return True
+    else:
+        return False
+
+
+
+# print(validpar(input="[()[{()}]]"))
