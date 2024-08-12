@@ -49,9 +49,16 @@ Welcome to this repository! This repository aims to provide a comprehensive list
     the process until we have covered the entire array.
 
 
-### Two Pointer and Iteratror
--  used in scenarios where the data is linear, such as arrays, strings, or linked lists.
+### Two Pointer and Iteratror / Multiple Pointer
+- used in scenarios where the data is linear, such as arrays, strings, or linked lists.
 - find pairs or subarrays in an array that satisfy a certain condition, or when we need to find a specific
   element in a sorted array.
 - Typically, the two pointers advance towards opposite ends of the data structure with a fixed increment.
 
+- Solution
+  - Initialize two pointers, left and right, to the first and last elements of the array, respectively.
+    While left is less than or equal to right, do the following:
+    If the sum of the elements at left and right is less than the target value, increment left.
+    If the sum of the elements at left and right is greater than the target value, decrement right.
+    If the sum of the elements at left and right is equal to the target value, return the pair (left, right).
+    If the loop terminates without finding a pair that sums to the target value, return null or some other sentinel value indicating that no such pair was found. Using the multiple pointers pattern can be an efficient way to solve certain problems, as it allows us to traverse the data structure in a single pass, rather than needing to perform multiple passes or use nested loops. It can also make the solution more readable and easier to understand, as it clearly defines the roles of the different pointers and the logic of the algorithm.
