@@ -49,16 +49,82 @@ Welcome to this repository! This repository aims to provide a comprehensive list
     the process until we have covered the entire array.
 
 
-### Two Pointer and Iteratror / Multiple Pointer
+### Two Pointer and Iteratror 
 - used in scenarios where the data is linear, such as arrays, strings, or linked lists.
 - find pairs or subarrays in an array that satisfy a certain condition, or when we need to find a specific
   element in a sorted array.
 - Typically, the two pointers advance towards opposite ends of the data structure with a fixed increment.
 
-- Solution
-  - Initialize two pointers, left and right, to the first and last elements of the array, respectively.
-    While left is less than or equal to right, do the following:
-    If the sum of the elements at left and right is less than the target value, increment left.
-    If the sum of the elements at left and right is greater than the target value, decrement right.
-    If the sum of the elements at left and right is equal to the target value, return the pair (left, right).
-    If the loop terminates without finding a pair that sums to the target value, return null or some other sentinel value indicating that no such pair was found. Using the multiple pointers pattern can be an efficient way to solve certain problems, as it allows us to traverse the data structure in a single pass, rather than needing to perform multiple passes or use nested loops. It can also make the solution more readable and easier to understand, as it clearly defines the roles of the different pointers and the logic of the algorithm.
+- Problems
+  - Target Sum
+    Input: [3, 5, 2, 8, 11], target = 10
+    Output: [2, 8]
+
+  - longest substring in a string that is a palindrome.
+    Input: "babad"
+    Output: "bab"
+  
+  - maximum sum sub-array
+    Input: [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+    Output: [4, -1, 2, 1]
+
+  - intersection of two sorted arrays.
+    Input: [1, 3, 4, 5, 7], [2, 3, 5, 6]
+    Output: [3, 5]
+
+
+
+
+### Fast and Slow Pointer
+- to solve problems that involve linked lists, arrays, or other data structures where we need to iterate through the data in a specific way.
+- involves using two pointers - a "slow" pointer and a "fast" pointer. The slow pointer moves one step at a time, while the fast pointer moves
+  two steps at a time.
+
+  - Problems
+    Detecting cycles in a linked list.
+      Input: 1 -> 2 -> 3 -> 4 -> 5 -> 2
+      Output: True
+    Finding the middle element of a linked
+    list.
+      Input: 1 -> 2 -> 3 -> 4 -> 5
+      Output: 3
+    Finding the intersection point of two
+    linked lists.
+      Input: 1 -> 2 -> 3 -> 4 -> 5, 8 -> 4 -> 5
+      Output: 4
+    Finding the kth to last element in a linked
+    list.
+      Input: 1 -> 2 -> 3 -> 4 -> 5, k = 2
+      Output: 4
+
+
+### Merge Intervals
+- The Merge Interval is a popular method for solving problems that involve merging or overlapping intervals. It is used when the problem requires combining or merging
+  intervals that share a common overlap or intersection.
+- DSA Usages:
+  - Array, Heap
+- Sample Problems:
+    Given a collection of intervals, merge all
+    overlapping intervals.
+    Input: [[1, 3], [2, 6], [8, 10], [15, 18]]
+    Output: [[1, 6], [8, 10], [15, 18]]
+    
+    Given a list of meeting intervals,
+    determine the minimum number of
+    meeting rooms required to schedule all
+    the meetings.
+    Input: [[0, 30], [5, 10], [15, 20]]
+    Output: 2
+    
+    Given a set of intervals, find the union of
+    all the intervals. The union is defined as
+    the set of intervals that covers all the
+    points in the input intervals.
+    Input: [[1, 3], [2, 4], [5, 7], [6, 8]]
+    Output: [[1, 4], [5, 8]]
+
+    Conflicting Appointments
+
+    Minimum Meeting Rooms
+
+### 4. In-place Reversal of a LinkedList
