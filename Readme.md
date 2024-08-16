@@ -128,3 +128,22 @@ Welcome to this repository! This repository aims to provide a comprehensive list
     Minimum Meeting Rooms
 
 ### 4. In-place Reversal of a LinkedList
+It is used when we need to reverse the order of the elements in the linked list without using any additional data structures such as arrays or other lists.
+DSA Usages:
+Linked List
+
+Sample Problems:
+Reversing a linked list of any size.
+Input: 1->2->3->4->5
+Output: 5->4->3->2->1
+
+Reversing a linked list from a certain point
+Input: 1->2->3->4->5, lenght= 3
+Output: 1->2->5->4->3
+to the end.
+
+Checking if a linked list is a palindrome.
+Input: 1->2->3->2->1
+Output: True
+
+### 5. Modified Binary Search
