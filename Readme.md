@@ -147,3 +147,75 @@ Input: 1->2->3->2->1
 Output: True
 
 ### 5. Modified Binary Search
+This method is used when the conventional binary search algorithm cannot be used to solve the problem because the searchcondition is more complex than simply checking if an element is greater than or less than the middle element.
+
+Sample Problems:
+Finding the minimum or maximum element in a rotated sorted array.
+Input: [4, 5, 6, 7, 0, 1, 2]
+Output: 0 (minimum) or 7 (maximum)
+
+Finding the first occurrence of an element in a sorted array.
+Output: 2
+Input: [1, 2, 3, 3, 3, 4, 5], target= 3
+
+Searching for a target value in a matrix where each row and column is sorted.
+Input: M= [[1, 4, 7], [2, 5, 8], [3, 6, 9]], t= 5
+Output: True
+
+
+### ISLAND MATRIX TRAVERSAL
+Application:
+It is used to solve problems that involve traversing a matrix or grid to find a specific pattern or object. This method is used when
+the problem requires identifying clusters or groups of cells in the matrix that meet certain criteria.
+
+DSA Used 
+Matrix, queue
+
+Sample Problems
+Counting the number of islands in a
+binary matrix.
+Input: [[1, 1, 0, 0, 0],
+[1, 1, 0, 0, 0],
+[0, 0, 1, 0, 0],
+[0, 0, 0, 1, 1]]
+Output: 3
+
+Finding the longest path in a matrix with
+given constraints.
+Input: [[5, 6, 7], [4, 9, 8], [3, 2, 1]]
+Output: [9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+Finding the largest sub-matrix with all 1's.
+Input: [[1, 1, 0, 1, 0],
+[0, 1, 1, 1, 0],
+[1, 1, 1, 1, 0],
+[0, 1, 1, 1, 1]]
+Output: [[1, 1, 1], [1, 1, 1], [1, 1, 1], [1, 1, 1]]
+
+
+### Two Heaps
+The Two Heaps is a popular method for
+solving problems that involve managing and
+processing elements in two separate heaps
+simultaneously. It is used when the problem
+requires maintaining two sets of elements
+with specific ordering or prioritization
+properties.
+
+DSA Usages:
+Heap, Array
+
+Sample Problems:
+Find the median of streaming data.
+Input: [2, 5, 1, 3, 6, 4]
+Output: [2, 3.5, 2, 2.5, 3, 3.5]
+
+Find the kth smallest element in an array.
+Input: [3, 7, 1, 4, 5, 2] and k = 3
+Output: 3
+
+Given a continuous stream of data and a
+window size, process the data efficiently
+Input: [4, 1, 3, 2, 5], window size = 3
+within the sliding window.
+Output: [4, 4, 4, 3, 5]
