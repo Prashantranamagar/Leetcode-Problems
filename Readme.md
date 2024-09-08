@@ -219,3 +219,25 @@ window size, process the data efficiently
 Input: [4, 1, 3, 2, 5], window size = 3
 within the sliding window.
 Output: [4, 4, 4, 3, 5]
+
+
+### Top ‘K’ Elements
+The Top 'K' Elements is a popular method for solving problems that involve finding or managing the K largest or smallest elements from a collection of elements. It is used when
+the problem requires identifying the elements with the highest or lowest values based on a specific criterion.
+
+DSA Usages:
+Heap, Array
+
+Sample Problems:
+Maximum distinct elements after removing k elements.
+Input: [5, 7, 5, 5, 1, 2, 2], K = 3
+Output: 4
+
+Find the top 'K' frequent elements in an
+array.
+Input: [3, 7, 1, 4, 5, 2] = 3
+Output: 3
+
+Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0)
+Input: [[1,3],[-2,2]], K = 1
+Output: [[-2,2]]
