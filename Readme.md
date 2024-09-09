@@ -241,3 +241,114 @@ Output: 3
 Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0)
 Input: [[1,3],[-2,2]], K = 1
 Output: [[-2,2]]
+
+
+### K Way Merge
+K way merge is a popular method for solving problems that imvolves merging multiple sorted list or arrays into a single sorted list or array. It is used when
+the problem requires combining and sorting element from multiple sources.
+DSA  Usage:
+Array, Queue, Heap
+
+Sample Problems:
+Merging K sorted arrays into a single sorted array.
+Input: [1, 4, 7], [2, 5, 8], and [3, 6, 9]
+Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Find Kth smallest value in M sorted arrays.
+Input: [[1, 3], [2, 4, 6], [0, 9, 10, 11]], K = 5
+Output: 4
+
+Merging K-sorted streams into a single
+sorted stream.
+Input: [1, 5, 9], [2, 6, 10], and [3, 7, 11]
+Output: [1, 2, 3, 5, 6, 7, 9, 10, 11]
+
+Kth Smallest Element in a Sorted Matrix.
+Input: [[1,5,9],[10,11,13],[12,13,15]], K = 8
+Output: 13
+
+
+### Cyclic Sort
+The Cyclic Sort is a popular method for solving problems that involve sorting an array
+of numbers in a specific range. It is used when the problem requires arranging the elements
+of the array in a cyclic manner to achieve the desired order.
+
+DSA Usages
+Array 
+
+Sample Problems:
+Sorting an array of distinct numbers.
+Input: [3, 1, 5, 4, 2]
+Output: [1, 2, 3, 4, 5]
+
+Find the smallest missing positive
+number.
+Input: [3, 1, -5, 4, 2]
+Output: 5
+
+Rearranging an array with values in the
+range 0 to n-1.
+Input: [3, 2, 0, 1]
+Output: [0, 1, 2, 3]
+
+Find the First K Missing Positive Numbers.
+Input: [1, 2, 3, 0, 4, 9, 7], K = 4
+Output: [5, 6, 8, 10]
+
+
+### BFS(Breadth First Search)
+BFS is a popular method for solving problems related to traversing or searching in a graph
+or tree data structure. It is used when the problem requires exploring or visiting all the
+vertices or nodes of the graph in a breadthwise manner, i.e., exploring the vertices at the
+same level before moving to the next level
+
+DSA Usages:
+Tree, Graph, Matrix, Queue
+
+Sample Problems:
+Find the shortest path or distance
+between two BST nodes.
+Input: [4,2,6,1,3]
+Output: 1
+
+Given the root of a binary tree, return the
+level order traversal of its nodes' values.
+(i.e., from left to right, level by level).
+Input: [3,9,20,null,null,15,7]
+Output: [[3],[9,20],[15,7]]
+
+Minimum Depth of a Binary Tree.
+Input: [3,9,20,null,null,15,7]
+Output: 2
+
+Connect nodes at the same Level.
+Input: [1,2,3,4,5,6,7]
+Output: [1,#,2,3,#,4,5,6,7,#]
+
+### DFS(Depth First Search)
+DFS is a popular method for solving problems related to traversing or searching in a graph or tree data structure. It is used when the
+problem requires exploring or visiting all the vertices or nodes of the graph in a depth-wise manner, i.e., exploring as far as possible along
+each branch before backtracking.
+
+DSA Usages:
+Tree, Graph, Matrix
+
+Sample Problems:
+
+Find the connected components in a
+graph.
+Input: n = 5, edges = [[0, 1], [1, 2], [3, 4]]
+Output: 2
+
+Detect cycles in a graph.
+Input: n = 5, edges = [[0, 1], [0, 2], [1, 2], [2, 0], [2, 3], [3, 3]]
+Output: [[3],[9,20],[15,7]]
+
+Check if there is a root-to-leaf path with a
+given sequence.
+Input: root = [0,1,0,0,1,0,null,null,1,0,0], arr = [0,1,0,1]
+Output: True
+
+Count Paths for a Sum.
+Input: root =[10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8
+Output: 3
