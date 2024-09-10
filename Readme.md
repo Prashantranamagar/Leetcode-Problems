@@ -352,3 +352,164 @@ Output: True
 Count Paths for a Sum.
 Input: root =[10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8
 Output: 3
+
+
+
+### Topological Sort
+The Topological Sort is a popular method for solving problems related to directed acyclic graphs (DAGs). It is used when the problem
+requires ordering the vertices of a DAG in such a way that for every directed edge (u, v), vertex u comes before vertex v in the
+ordering.
+
+DSA Usages:
+Array, HashTable, Queue, Graph
+
+Sample Problems:
+Given the total number of n tasks and a list of prerequisite pairs of size m. Find
+the order of tasks you should pick to finish all tasks.
+Input: n = 2, m = 1, prerequisites = {{1, 0}}
+Output: True
+
+
+Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the
+given words are sorted lexicographicallyin this alien language.
+Input: words = ["hello", "leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"
+Output: True
+
+
+
+### Fibonacci Numbers
+The Fibonacci Numbers method is a mathematical sequence that is frequently used in DSA to solve various problems. It is
+used when the problem involves calculating or generating the Fibonacci sequence or utilizing the properties of Fibonacci numbers.
+
+DSA Usages:
+Array, HashTable
+
+Sample Problems:
+Calculate the nth Fibonacci number.
+Input: n = 10
+Output: 55
+
+You are climbing a staircase. It takes n steps to reach the top. Each time you can
+either climb 1 or 2 steps. In how many distinct ways can you climb to the top? 
+Input: n = 2
+Output: 2
+
+You are a professional robber planning torob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing
+each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+Input: nums = [1,2,3,1]
+Output: 4
+
+
+### Subsets
+
+The Subsets method is a common algorithmic approach used in DSA to generate or explore all possible subsets of a given set. It is used
+when the problem involves finding or generating all combinations or subsets of elements from a set.
+
+DSA Usages:
+Queue, Array, String
+
+Sample Problems:
+Given a set of elements, generate all possible subsets, including the empty set and the set itself.
+Input: [1, 2, 3]
+Output: {}, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3},
+{1, 2, 3}
+
+Given a set of non-negative integers and a value sum, the task is to check if there is a
+subset of the given set whose sum is equal to the given sum.
+Input: [3, 34, 4, 12, 5, 2], sum = 9
+Output: True
+
+Given an array of nums of distinct integers, return all the possible
+permutations. You can return the answer in any order.
+Input: nums = [1,2,3]
+Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2], [3,2,1]]
+
+
+### 0/1 Knapsack
+The 0/1 Knapsack method is a well-known algorithmic approach used in DSA to solve
+optimization problems, particularly those involving resource allocation or selection.
+It is used when the problem requires maximizing or minimizing a value while
+considering constraints on the capacity or availability of resources.
+
+DSA Usages:
+Array, HashTable
+
+Sample Problems:
+Given a list of items with their weights and values, and a knapsack with a weight
+capacity, find the maximum value that can be obtained by selecting a subset of items
+to fit into the knapsack without exceeding its weight capacity.
+Input: [[2, 3], [3, 4], [4, 5], [5, 8], [9, 10]]
+Output: 17
+
+Given a set of resources with their respective costs and benefits, and a
+limited budget or capacity, determine the optimal allocation of resources to
+maximize the overall benefit or value.
+Input: [[5, 10], [8, 15], [3, 7], [6, 12]]
+Output: 15
+
+
+### Palindromic Subsequence
+The Palindromic Subsequence method is a technique used in DSA to solve problems that
+involve identifying and manipulating palindromic subsequences within a given 
+string or sequence. It is used when the problem requires finding or manipulating
+palindromic subsequences with specific properties or constraints.
+
+DSA Usages:
+Array, HashTable
+
+Sample Problems:
+Longest Palindromic Subsequence. 
+Input: "BBABCBCAB"
+Output: "BABCBAB" with a length of 7
+
+Given str, count the total no. of distinct palindromic subsequences that can be formed 
+using the characters of the string.
+Input: "ACBCDBAA"
+Output: 19
+
+Given a string, count the total number of distinct palindromic subsequences that
+can be formed using the characters of the string.
+Input: "ACBCDBAA"
+Output: 19
+
+Minimum Deletions in a String to make it a Palindrome.
+Input: "ACBCDBAA"
+Output: 19 
+
+
+### Longest Common Substring
+
+The Longest Common Substring method is used in DSA to solve problems that involve
+finding the longest common substring between two or more strings. It is used when
+the problem requires identifying the longest continuous sequence of characters that is
+common to multiple strings.
+
+DSA Usages:
+Array, HashTable
+
+
+### Bitwise XOR
+The Bitwise XOR (Exclusive OR) method is used in DSA to solve various problems that
+involve bitwise operations and manipulation of binary representations of numbers. It is
+used when the problem requires performing operations or extracting information by
+manipulating individual bits using XOR logic.
+
+DSA Usages:
+Array, Bits
+
+Sample Problems:
+Given an array of integers where every element appears twice except for one
+element, find that single element.
+Input: [2, 4, 6, 2, 4]
+Output: 6
+
+Given an array in which all numbers except two are repeated once. (i.e. we
+have 2n+2 numbers and n numbers are occurring twice and the remaining two
+have occurred once). Find those two numbers in the most efficient way.
+Input: [ 2, 3, 7, 9, 11, 2, 3, 11 ]
+Output: 7, 9
+
+Given two strings s1 and s2, the task is to find the length of the longest common
+substring of s1 and s2 such that the XOR is maximum.
+Input: s1 = "79567" , s2 = "56779"
+Output: 2
