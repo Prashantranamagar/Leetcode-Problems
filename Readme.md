@@ -4,19 +4,29 @@ Welcome to this repository! This repository aims to provide a comprehensive list
 
 ## Table of Contents
 
-- [Patterns](#patterns)
   - [Sliding Window](#sliding-window)
   - [Two Pointers](#two-pointers)
   - [Fast and Slow Pointers](#fast-and-slow-pointers)
   - [Merge Intervals](#merge-intervals)
-  - [Cyclic Sort](#cyclic-sort)
   - [In-place Reversal of a Linked List](#in-place-reversal-of-a-linked-list)
+  - [Modified Binary Search](#modified-binary-search)
+  - [Island Matrix Traversal](#island-matrix-traversal)
+  - [Two Heaps](#two-heaps)
+  - [Top ‘K’ Elements](#top-k-elements)
+  - [K Way Merge](#k-way-merge)
+  - [Cyclic Sort](#cyclic-sort)
+  - [Breadth-First Search (BFS)](#breadth-first-search-bfs)
+  - [Depth-First Search (DFS)](#depth-first-search-dfs)
+  - [Topological Sort](#topological-sort)
+  - [Fibonacci Numbers](#fibonacci-numbers)
+  - [Subsets](#subsets)
+  - [0/1 Knapsack](#01-knapsack)
+  - [Palindromic Subsequence](#palindromic-subsequence)
+  - [Longest Common Substring](#longest-common-substring)
+  - [Bitwise XOR](#bitwise-xor)
   - [Tree Traversal](#tree-traversal)
   - [Graph Traversal](#graph-traversal)
   - [Dynamic Programming](#dynamic-programming)
-  - [Topological Sort](#topological-sort)
-
-
 
 
 ### Sliding Window
@@ -127,7 +137,7 @@ Welcome to this repository! This repository aims to provide a comprehensive list
 
     Minimum Meeting Rooms
 
-### 4. In-place Reversal of a LinkedList
+### In-place Reversal of a LinkedList
 It is used when we need to reverse the order of the elements in the linked list without using any additional data structures such as arrays or other lists.
 DSA Usages:
 Linked List
@@ -146,7 +156,7 @@ Checking if a linked list is a palindrome.
 Input: 1->2->3->2->1
 Output: True
 
-### 5. Modified Binary Search
+### Modified Binary Search
 This method is used when the conventional binary search algorithm cannot be used to solve the problem because the searchcondition is more complex than simply checking if an element is greater than or less than the middle element.
 
 Sample Problems:
