@@ -1,5 +1,37 @@
 """
-Binary Search Tree 
+# Binary tree --> where node have no more than 2 child node
+
+Binary Search Tree --> Binary Servh Tree which have left child smaller than the parent node and right child greater than the parent node.
+no duplicates allwed.
+
+Birnary Search Tree Implementation
+Create a class node initialize value, left pointer and right pointer.
+create class BST
+Initialize root to none
+
+Insert node in BST
+create new node
+if self.root is none then
+set root = new_node
+set pointer temp = root
+run while loop while True
+if temp.value = new_node return false
+if temp.value > newnode.value
+    if temp.left is none
+        temp.left = newnode
+        return True
+    temp = temp.left
+if temp.value < newnode.value
+    if temp.right is none
+        temp.reght = newnode
+        return True
+    temp = temp.right
+
+to check it contains the given value in the tree
+do it simillarly concept as above.
+    
+
+
 """
 
 class Node:
@@ -61,3 +93,6 @@ print(my_tree.contains(27))
 
 print('\nBST Contains 17:')
 print(my_tree.contains(17))
+
+
+
